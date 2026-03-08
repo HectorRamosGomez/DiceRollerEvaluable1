@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DiceRollerEvaluable1</string>
+    <string name="gira_el_dado">Gira el dado</string>
+    <string name="gira" />
+    <string name="dale_al_boton_para_girar_el_dado">Dale al boton para girar el dado</string>
+    <string name="girar">GIRA</string>
 </resources>
