@@ -16,6 +16,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.botonGirar.setOnClickListener {
+            dadoNumero = generarNumeroRandom()
+            binding.textoInstrucciones.text = dadoNumero.toString()
+            asignarFoto(dadoNumero)
+
+        }
+
     }
 
     private fun generarNumeroRandom(): Int {
@@ -31,5 +39,6 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
+        binding.foto.setImageResource(fotos)
     }
 }
